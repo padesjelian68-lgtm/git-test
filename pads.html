@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity3</title>	
+	<link rel="stylesheet" type="text/css" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css>	
+</head>
+<body>
+
+
+<h1>Actvity3</h1>
+<p>Tabs, Pills and Tabbed Navigation</p>
+
+<ul class="nav nav-tabs nav-justified">
+ <li class="active"><a href="#">Home</a></li>
+ <li><a href="#">Menu 1</a></li>
+ <li><a href="#">Menu 2</a></li>
+ <li><a href="#">Menu 3</a></li>
+</ul>
+
+<p>Collapsible</p>
+
+
+
+
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+<div id="demo" class="collapse">
+</div>
+
+<div id="demo" class="collapse in">
+</div>
+
+<div class="panel-group">
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+ </h4>
+ </div>
+ <div id="collapse1" class="panel-collapse collapse">
+ <div class="panel-body">Panel Body</div>
+ <div class="panel-footer">Panel Footer</div>
+ </div>
+ </div>
+</div>
+
+<div class="panel-group">
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+ </h4>
+ </div>
+ <div id="collapse1" class="panel-collapse collapse">
+ <ul class="list-group">
+ <li class="list-group-item">One</li>
+ <li class="list-group-item">Two</li>
+ <li class="list-group-item">Three</li>
+ </ul>
+ <div class="panel-footer">Footer</div>
+ </div>
+ </div>
+</div>
+
+
+<div class="panel-group" id="accordion">
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+ Collapsible Group 1</a>
+ </h4>
+ </div>
+ <div id="collapse1" class="panel-collapse collapse in">
+ <div class="panel-body"></div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+ Collapsible Group 2</a>
+ </h4>
+ </div>
+ <div id="collapse2" class="panel-collapse collapse">
+ <div class="panel-body"></div>
+ </div>
+ </div>
+ <div class="panel panel-default">
+ <div class="panel-heading">
+ <h4 class="panel-title">
+ <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+ Collapsible Group 3</a>
+ </h4>
+ </div>
+ <div id="collapse3" class="panel-collapse collapse">
+ <div class="panel-body"></div>
+ </div>
+ </div>
+</div>
+<p>Tooltips, Popovers and Modals</p>
+
+
+
+
+
+
+
+<a href="#" title="Dismissible popover" data-toggle="popover" datatrigger="focus" data-content="Click anywhere in the document to close this
+popover">Click me</a>
+
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" datatarget="#myModal">Open Modal</button>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+ <div class="modal-dialog">
+ 
+ <div class="modal-content">
+ <div class="modal-header">
+ <button type="button" class="close" data-dismiss="modal">&times;</button>
+ <h4 class="modal-title">Modal Header</h4>
+ </div>
+ <div class="modal-body">
+ <p>Some text in the modal.</p>
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+ </div>
+ </div>
+ </div>
+</div>
+<p>Carousel</p>
+ 	
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+ <ol class="carousel-indicators">
+ <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ <li data-target="#myCarousel" data-slide-to="1"></li>
+ <li data-target="#myCarousel" data-slide-to="2"></li>
+ </ol>
+ <!-- Wrapper for slides -->
+ <div class="carousel-inner">
+ <div class="item active">
+ <img src="pic.jfif" alt="aesa">
+ <div class="carousel-caption">
+ <h3>pretty</h3>
+ <p>mylove</p>
+ </div>
+ </div>
+ <div class="item">
+ <img src="pic2.jfif" alt="Chicago">
+ <div class="carousel-caption">
+ <h3>cute</h3>
+ <p>lovey</p>
+ </div>
+ </div>
+ <div class="item">
+ <img src="pic3.jfif" alt="New York">
+ <div class="carousel-caption">
+ <h3>sexy</h3>
+ <p>mybaby</p>
+ </div>
+ </div>
+ </div>
+ 
+ <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left"></span>
+ <span class="sr-only">Previous</span>
+ </a>
+ <a class="right carousel-control" href="#myCarousel" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right"></span>
+ <span class="sr-only">Next</span>
+ </a>
+</div>
+
+</body>
+</html>
